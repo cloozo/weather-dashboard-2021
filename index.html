@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="my_title">Weather Dashboard</title>
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+ <header>
+ <h1 id="weather">Weather Dashboard</h1>
+    </header>
+
+
+
+ <div class="content">
+
+<div class="row"></div>
+  <!--  -->
+  <div class="col-sm-3">
+  
+    <label for ="city">   <h1>Search for a city:</h1> </label>
+    <input type="text" class="city_search_input"   name="city_name" placeholder="miami">
+    <br>
+    <br>
+    <input type="button"  class="btn_search" value="search">
+    <hr>
+  </div>
+
+  <div class="col-sm-9">
+    <div id="city_wrap_top">
+
+      <h3><div  id="city_result"> Miami:  <span> - Static -</span> </div> </h3>
+
+    <label>Name :    <span id="city_name"></span>  </label>.......
+    <label>Timezone :      <span id="timezone"></span>   </label>......
+    <label>icon :   <span id="icon"></span>  </label>
+  </br>
+
+<label>Temp :    <span id="temp"></span>   </label>........
+<br>
+<label>Wind :   <span id="wind"></span>   </label>.......
+<br>
+<label>Humidity :  <span id="humidity"></span></label>......
+<br>
+<label>UV index :   <span id="uvindex"></span></label>........
+<br>
+</div>
+
+ 
+<!-- where result will be displayed -->
+   <div id="city_wrap_below">
+
+ <h2> 5-Day Forecast:  </h2>
+
+ <div class="row"> </div>
+
+
+  <div class="col-md-2"> 
+
+<label>Date: <span id="timezone"></span></label>
+<br>
+<label>Picture: <span id="icon"></span></label>
+<br>
+<label>Temp: <span id="temp"></span></label>
+<br>
+<label>Wind: <span id="wind"></span></label>
+<br>
+<label>Humidity:<span id="humidity"></span></label>
+<br>
+<hr>
+  </div>
+
+
+
+  <div id class="col-md-2"> <label>10/23/2021</label>
+    <br>
+    
+    <label>Picture:</label>
+    <br>
+<label>Temp</label>
+    <br>
+    <label>Wind:</label>
+    <br>
+    <label>Humidity:</label>
+    <br>
+    <hr>
+    </div>
+ 
+
+
+  <div class="col-md-2">  <label>10/23/2021</label>
+    <br>
+<label>Picture</label>
+    <br>
+    
+    <label>Temp:</label>
+    <br>
+    <label>Wind:</label>
+    <label>Humidity:</label>
+    <br>
+    <hr>
+    </div>
+  
+
+  <div class="col-md-2">  <label>10/23/2021</label>
+    <br>
+<label>Picture</label>
+    <br>
+    <label>Temp:</label>
+    <br>
+    <label>Wind:</label>
+    <br>
+    <label>Humidity:</label>
+    <br>
+    <hr>
+   </div>
+   
+
+
+  <div class="col-md-4"> <label>10/23/2021</label>
+    <br>
+<label>Picture</label>
+<br>
+<label>Temp:</label>
+<br>
+
+<label>Wind:</label>
+<br>
+<label>Humidity:</label>
+<br>
+<hr>
+
+
+
+
+
+
+
+
+
+   <!-- row end div -->
+
+  <!-- content end div -->
+ 
+
+
+
+<script src="Assets/js/script.js"></script>
+</body>
+</html>
