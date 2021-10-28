@@ -16,7 +16,7 @@ header{
   color:white;
   text-align: center;
   height:80px;
- padding-top:20px;
+ padding-top:10px;
 
  
 }
@@ -58,7 +58,7 @@ label h1{
 input{
     font-size:25px;
     color:black;
-    width:260px;
+    width:220px;
     margin:10px;
     height:40px;
     padding-left:10px;
@@ -67,7 +67,7 @@ input{
   
     font-size:25px;
     color:rgb(255, 255, 255);
-    width:260px;
+    width:220px;
     height:40px;
     background: rgb(104, 158, 211);
     border:none;
@@ -76,8 +76,12 @@ input{
 }
 .col-lg-9{
   
-    border-left: 1px solid grey;;
-    height:80vh
+    border-left: 1px solid rgb(231, 222, 222);;
+    height:300px;
+   margin:10px;
+}
+#city_result{
+  display:none;
 }
  #result{
    
@@ -87,7 +91,7 @@ input{
  #city_wrap_top{
 
     width: 100%;
-    height:200px;
+    height:250px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(122, 115, 115);
     padding:0  0  0 20px;
@@ -100,15 +104,15 @@ input{
     height:auto;
     background: rgb(255, 254, 254);
   /* border: 1px solid rgb(122, 115, 115); */
-    padding:0  0  0 20px;
+    padding:0  0  0 10px;
  }
  #city_wrap_below .row {
-
+  background: lightgrey;
     width: 100%;
     height:100%;
     background: rgba(39, 39, 223, 0.616);
-   padding:20px;
-    padding:0  0  0 20px;
+   padding:10px;
+    padding:0  0  0 21px;
       /* border: 1px solid rgb(122, 115, 115); */
  }
 
@@ -116,10 +120,16 @@ input{
 
     width: 100%;
     height:100%;
-    background: rgba(39, 39, 223, 0.616);
+    background: rgba(199, 199, 206, 0.616);
     color:white;
-   padding:20px;
-    padding:0  0  0 20px;
+   padding:10px;
+    padding:0  0  0 10px;
       /* border: 1px solid rgb(122, 115, 115); */
  }
 
+#display_all{
+  padding:10px;
+  background: lightgrey;
+  display: none;
+ 
+}

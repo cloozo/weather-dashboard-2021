@@ -22,9 +22,6 @@
  <header>
  <h1 id="weather">Weather Dashboard</h1>
     </header>
-
-
-
  <div class="content">
 
 <div class="row"></div>
@@ -32,123 +29,124 @@
   <div class="col-sm-3">
   
     <label for ="city">   <h1>Search for a city:</h1> </label>
-    <input type="text" class="city_search_input"   name="city_name" placeholder="miami">
+    <br>
+    <input type="text" class="city_search_input"   name="city_name" placeholder="enter a city name">
     <br>
     <br>
     <input type="button"  class="btn_search" value="search">
     <hr>
   </div>
 
-  <div class="col-sm-9">
+  <div class="col-sm-9" id="display_all">
     <div id="city_wrap_top">
 
-      <h3><div  id="city_result"> Miami:  <span> - Static -</span> </div> </h3>
+      <!-- CUrrent Day -->
 
-    <label>Name :    <span id="city_name"></span>  </label>.......
-    <label>Timezone :      <span id="timezone"></span>   </label>......
-    <label>icon :   <span id="icon"></span>  </label>
-  </br>
+      <h3><div  id="city_result"> <span> </span> </div> </h3>
+      <h3><div  id="currentDay">  <span> </span> </div> </h3>
 
-<label>Temp :    <span id="temp"></span>   </label>........
+    <label>City:  <span id="city_name"></span>  </label>
+    <label>Timezone:  <span id="timezone"></span>   </label>
+    <label>  <span id="icon"></span>  </label>
+    <br>
+<label>Temp:    <span id="temp"></span>   </label>
 <br>
-<label>Wind :   <span id="wind"></span>   </label>.......
+<label>Wind:   <span id="wind"></span>   </label>.
 <br>
-<label>Humidity :  <span id="humidity"></span></label>......
+<label>Humidity:  <span id="humidity"></span></label>
 <br>
-<label>UV index :   <span id="uvindex"></span></label>........
+<label>UV index:   <span id="uvindex"></span></label>
 <br>
 </div>
 
- 
-<!-- where result will be displayed -->
+
+<!-- CUrrent Day -->
    <div id="city_wrap_below">
 
  <h2> 5-Day Forecast:  </h2>
-
  <div class="row"> </div>
+  <div class="col-md-2"> 
+    
+    <label>Timezone:     
+       <span id="timezone1"></span>   </label>
+    <label> <span id="icon1"></span>  </label>
+<label>Temp:    <span id="temp1"></span>   </label>
+<br>
+<label>Wind:   <span id="wind1"></span>   </label>
+<br>
+<label>Humidity:  <span id="humidity1"></span></label>
+<br>
+<label>UV index:   <span id="uvindex1"></span></label>
+<br>
+</div>
+
+
+
+  <div id class="col-md-2"> 
+    <label>Timezone:      <span id="timezone2"></span>   </label>
+    <label>  <span id="icon2"></span>  </label>
+  </br>
+
+<label>Temp:    <span id="temp2"></span>   </label>
+<br>
+<label>Wind:   <span id="wind2"></span>   </label>
+<br>
+<label>Humidity:  <span id="humidity2"></span></label>
+<br>
+<label>UV index:   <span id="uvindex2"></span></label>
+<br>
+</div>
+  
+
+
+
+  <div class="col-md-2">  
+
+    <label>Timezone:      <span id="timezone3"></span>   </label>
+    <label> <span id="icon3"></span>  </label>
+  </br>
+
+<label>Temp:    <span id="temp3"></span>   </label>
+<br>
+<label>Wind:   <span id="wind3"></span>   </label>
+<br>
+<label>Humidity:  <span id="humidity3"></span></label>
+<br>
+<label>UV index:   <span id="uvindex3"></span></label>
+<br>
+</div>
 
 
   <div class="col-md-2"> 
+    <label>Timezone:      <span id="timezone4"></span>   </label>
+    <label>  <span id="icon4"></span>  </label>
+  </br>
 
-<label>Date: <span id="timezone"></span></label>
+<label>Temp:    <span id="temp4"></span>   </label>
 <br>
-<label>Picture: <span id="icon"></span></label>
+<label>Wind:   <span id="wind4"></span>   </label>
 <br>
-<label>Temp: <span id="temp"></span></label>
+<label>Humidity:  <span id="humidity4"></span></label>
 <br>
-<label>Wind: <span id="wind"></span></label>
+<label>UV index:   <span id="uvindex4"></span></label>
 <br>
-<label>Humidity:<span id="humidity"></span></label>
-<br>
-<hr>
-  </div>
-
-
-
-  <div id class="col-md-2"> <label>10/23/2021</label>
-    <br>
-    
-    <label>Picture:</label>
-    <br>
-<label>Temp</label>
-    <br>
-    <label>Wind:</label>
-    <br>
-    <label>Humidity:</label>
-    <br>
-    <hr>
-    </div>
- 
-
-
-  <div class="col-md-2">  <label>10/23/2021</label>
-    <br>
-<label>Picture</label>
-    <br>
-    
-    <label>Temp:</label>
-    <br>
-    <label>Wind:</label>
-    <label>Humidity:</label>
-    <br>
-    <hr>
-    </div>
-  
-
-  <div class="col-md-2">  <label>10/23/2021</label>
-    <br>
-<label>Picture</label>
-    <br>
-    <label>Temp:</label>
-    <br>
-    <label>Wind:</label>
-    <br>
-    <label>Humidity:</label>
-    <br>
-    <hr>
-   </div>
+</div>
    
 
+  <div class="col-md-2"> 
+    <label>Timezone:      <span id="timezone5"></span>   </label>
+    <label>  <span id="icon5"></span>  </label>
+  </br>
 
-  <div class="col-md-4"> <label>10/23/2021</label>
-    <br>
-<label>Picture</label>
+<label>Temp:    <span id="temp5"></span>   </label>
 <br>
-<label>Temp:</label>
+<label>Wind:   <span id="wind5"></span>   </label>
 <br>
-
-<label>Wind:</label>
+<label>Humidity:  <span id="humidity5"></span></label>
 <br>
-<label>Humidity:</label>
+<label>UV index:   <span id="uvindex5"></span></label>
 <br>
-<hr>
-
-
-
-
-
-
-
+</div>
 
 
    <!-- row end div -->
@@ -157,7 +155,7 @@
  
 
 
-
+  <script src="lib/moment/moment.min.js"></script>
 <script src="Assets/js/script.js"></script>
 </body>
 </html>
