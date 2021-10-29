@@ -1,4 +1,3 @@
-
 var todayDate = new Date();
 var formatDate = moment(todayDate).format('dddd, MMMM DD, YYYY')
 var dateOutput = document.querySelector("#currentDay").innerHTML =`${formatDate}`;
@@ -64,7 +63,6 @@ var  wind4 =document.getElementById("wind4")
 var humidity4 =  document.getElementById("humidity4")
 var  uvIndex4 =  document.getElementById("uvIndex4")
 // Day 2
-
 var  timezone5 = document.getElementById("timezone5")
 var  icon5 =  document.getElementById("icon5")
 var temp5 =document.getElementById("temp5")
