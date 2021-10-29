@@ -2,8 +2,9 @@
 var todayDate = new Date();
 var formatDate = moment(todayDate).format('dddd, MMMM DD, YYYY')
 var dateOutput = document.querySelector("#currentDay").innerHTML =`${formatDate}`;
- var empty_storage = [];
-var cityGetItem = localStorage.getItem('cityKey');
+var cityGetItem = null;
+var clearHistoryEl = document.getElementById("clear-history");
+
 
 //converting to military time
 var currentHour = moment().format("H");
@@ -25,6 +26,8 @@ var  icon =  document.getElementById("icon")
 var temp =document.getElementById("temp")
 var  wind =document.getElementById("wind")
 var humidity =  document.getElementById("humidity")
+var longitude = document.getElementById("longitude")
+var latitude = document.getElementById("latitude")
 var  uvIndex =  document.getElementById("uvIndex")
 
 //Day 1
@@ -79,17 +82,15 @@ if (citySearchInput.value)
   
     city_result.innerHTML = citySearchInput.value;
   
-    var emptyArray = [];
-    var myCity = citySearchInput.value;
-    for (i =0; i < emptyArray.length;i ++){
-      emptyArray.push(myCity);
-     
-    }
-    console.log(emptyArray)
-    debugger
-    
-
-    
+    var city_inputElement = ' ' + document.querySelector(".city_search_input").value;
+    if (localStorage.getItem('cityKey') === null ){ 
+       localStorage.setItem('cityKey', '[]');
+   
+   }
+   
+   var previous_data = JSON.parse(localStorage.getItem('cityKey'));
+   previous_data.push(city_inputElement)
+   localStorage.setItem('cityKey', JSON.stringify(previous_data))
 
 
 
@@ -99,13 +100,12 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+citySearchInput.valu
 .then(response => response.json())
 .then (data => {
 
-  localStorage.setItem('cityKey', citySearchInput.value );
+  // localStorage.setItem('cityKey', citySearchInput.value );
 
     displayAll.style.display="block";
-   
     city_name.innerHTML = data.city.name;
     console.log(data.city.name)
-    
+   
 
     timezone.innerHTML = data.city.timezone;
     console.log(data.city.timezone)
@@ -122,6 +122,26 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+citySearchInput.valu
 
      humidity.innerHTML = data.list[0].main.humidity;
      console.log(data.list[0].main.humidity);
+
+
+     longitude.innerHTML = data.city.coord.lon;
+     console.log(data.city.coord.lon);
+
+    latitude.innerHTML = data.city.coord.lat;
+     console.log(data.city.coord.lat);
+
+
+     if (data.city.coord.value < 4 ) {
+      uvIndex.innerHTML = "green";
+  }
+  else if (data.city.coord.value < 8) {
+    uvIndex.innerHTML = "yellow";
+  }
+  else {
+    uvIndex.innerHTML = "red";
+  }
+
+
 
 
     //Day 1
@@ -218,10 +238,12 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+citySearchInput.valu
   console.log(data.list[5].main.humidity);
 
 })
-} else{
-    if(!citySearchInput.value){
-    city_result.innerHTML = "Sorry! search box cannot be empty" };
-}
+
+} 
+// else{
+//     if(!citySearchInput.value){
+//     city_result.innerHTML = "Sorry! search box cannot be empty" };
+// }
 
 
 })
