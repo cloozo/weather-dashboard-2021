@@ -10,7 +10,6 @@ var clearHistoryEl = document.getElementById("clear-history");
 var currentHour = moment().format("H");
 
 // console.log(currentHour);
-//
 
 var myApiKey = '91407228ad85e70eab72acdea5a12aa4' ;
 var citySearchInput = document.querySelector(".city_search_input")
