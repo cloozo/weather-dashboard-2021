@@ -79,7 +79,6 @@ buttonSearch.addEventListener("click", function searchButtonFunction(){
 
 if (citySearchInput.value)
 {
-  
     city_result.innerHTML = citySearchInput.value;
   
     var city_inputElement = ' ' + document.querySelector(".city_search_input").value;
