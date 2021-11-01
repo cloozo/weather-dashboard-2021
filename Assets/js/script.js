@@ -49,7 +49,7 @@ var uvIndex1 = document.getElementById("uvIndex1");
 citySearchInput.value = cityGetItem;
 //
 var getLocalStorage = JSON.parse(localStorage.getItem("cityKey"));
-if (getLocalStorage != null) {
+if (getLocalStorage != null && getLocalStorage != citySearchInput) {
   localStorage.getItem("cityKey", "[input_textEl]");
   for (i = 0; i < getLocalStorage.length; i++) {
     //   console.log(getLocalStorage[i]);
