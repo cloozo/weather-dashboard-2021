@@ -54,7 +54,7 @@ input{
 .col-lg-9{
   
     border-left: 1px solid rgb(231, 222, 222);;
-    height:340px;
+    height:300px;
    margin:10px;
 }
 #city_result{
@@ -68,7 +68,7 @@ input{
  #city_wrap_top{
 
     width: 100%;
-    height:260px;
+    height:200px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(122, 115, 115);
     padding:0  0  0 20px;
@@ -94,17 +94,18 @@ input{
 
 
 #display_all{
-  justify-content: space-evenly
+  justify-content: space-evenly;
   background: white;
   display: none;
  
 }
 .col-sm-2{
-  justify-content: space-evenly;
+  justify-content: space-between;
   background: rgb(22,123,255);
   color: white;
  margin:4px;
- margin-left:20px;
+ margin-left:10px;
+
 
  
 }

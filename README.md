@@ -1,44 +1,46 @@
-# 06 Server-Side APIs: Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+# Javascript- Weather Dashboard 221
+---
+## Use of the site can be summed up with the following user story:
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data.
+ To fullfill the requirement of this assingment, I have used many ressoures which include but are not limited to mdn documentation,
+momentjs, fontawesome icons, google api, CDN documentation.
 
-## User Story..
+*  The web app was created using diffeent techonologiess. I have used Vanilla Javascript, HTML5 , CSS, bootstrap and JQUEY to get the task done
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+ I also use local storage to facilitate storing of users information like their initial and score in local computer, which later can be conveniently retrieved. By using the moment.js documentation, I was to get the military time that facilites the display of the time block (standard business hours)based on some if else statement.
+ 
+---
 
-## Acceptance Criteria
+## Use of the site can be summed up with the following user story:
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
 
-The following image demonstrates the application functionality:
+* At the landing page, the user is presented with an input the enter a city for which they would like to get the most current  weather information as well as the forecast for the next  days. 
+Once the user input the information on the left, they are presented with some information about the city they enter.
+For the curent weather  information, the city,  the date, Temp, Wind, Humidity, longitude, latitude: 33.749, UV index.. and for the next 5 days , same information will be presendted execpt the index
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
 
-## Review
 
-You are required to submit the following for review:
+---
+ Overall,  this challenge was a great learning experience and this activity has helped me greatly advanced in my road to becoming a web developper.
 
-* The URL of the deployed application.
+## link to the page can be found here: 
+[Live weather dashboard application deployed at](https://cloozo.github.io/weather-dashboard-app-2021/index.html)
+<img src='./images/screenshot.png'>
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+---
+# Technologies Used
+
+- Vanilla JavaScript
+- HTML
+- CSS
+- Jquery
+
+---
+
+# Assignment: Calendar Challenge
+
+By Jonacin Pierre-Louis, 2021
+Powered by HTML and CSS jQuery
