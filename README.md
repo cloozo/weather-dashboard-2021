@@ -44,5 +44,5 @@ momentjs, google api, CDN documentation.
 
 # Assignment: Calendar Challenge
 
-By Jonacin Pierre-Louis, 2021
+By Jonacin Pierre-Louis, 2021c
 Powered by HTML and CSS jQuery

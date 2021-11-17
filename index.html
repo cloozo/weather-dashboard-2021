@@ -29,14 +29,17 @@
   
     <label for ="city"> <h1>Search for a city:</h1> </label>
     <br>
-    <input type="text" class="city_search_input"   name="city_name" placeholder="enter a city name">
+    <input type="text" class="city_search_input"  style="text-transform:uppercase"  name="city_name" placeholder="enter a city name">
+   
     <br>
-    <br>
+    <div id="errormessage">  <br></div>
+  
     <input type="button"  class="btn_search" value="search">
+    <i class="fa fa-history" aria-hidden="true"></i>
     <hr>
    <!--  // -->
    <ul> 
-   
+
      </ul>
    <!--  -->
 
@@ -158,8 +161,6 @@
 
   <!-- content end div -->
  
-
-
   <script src="lib/moment/moment.min.js"></script>
 <script src="Assets/js/script.js"></script>
 </body>
