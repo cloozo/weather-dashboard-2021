@@ -24,7 +24,7 @@ momentjs, google api, CDN documentation.
 ---
  Overall,  this challenge was a great learning experience and this activity has helped me greatly advanced in my road to becoming a web developper.
 
-## link to the deployed app can be found here: https://cloozo.github.io/weather-dashboard-app-2021/index.html
+## link to the deployed app can be found here: https://cloozo.github.io/weather-dashboard-2021/index.html
 [Live weather dashboard application deployed](https://cloozo.github.io/weather-dashboard-app-2021/index.html)
 ![screenshot](https://user-images.githubusercontent.com/84163696/139613203-d2b34682-b284-4adc-94cd-5012aa3c248a.png)
 
